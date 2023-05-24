@@ -1,0 +1,92 @@
+*/*selector universal que aplica todas las propiedades al archivo html completo*/{
+    margin: 0; /* el margin es usado */
+    padding: 0;
+}
+#fondo1/*es un id que se declaro en el apartado html, con esto solo se personaliza dicho id*/{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background4.jpg);
+}
+#fondo2{
+    position: absolute;/*Hace que la posicion del elemento se quede de forma absoluta, es decir, ignorara la colicacion normal de los elementos y se quedara donde esta*/
+    width: 100%;/*Ancho del elemento*/
+    height: 100%;/*Alto del elemento*/
+    background: url(../img/background2.jpg);/*Establece una imagen por medio del enlace como fondo del espacio en donde fue llamada*/
+    background-size: cover;/*Hace que la imagen que se puso anteriormente recubra todo el espacio en donde esta ubicada*/
+    animation: mianimacion 24s linear 12s infinite;/*Animation es una propiedad en la que se pueden insertar varias propiedades de una animacion, como el nombre de la animacion, la duracion, la forma y cuantas veces se repetira*/
+    -webkit-animation: mianimacion 24s linear 12s infinite;/*son usadas para definir animaciones personalizadas, al igual que moz-animation, son caracteristicas de diseño adaptables segun el navegador*/
+    -moz-animation: mi animacion 24s linear 12s infinite;
+
+}
+#fondo3{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background3.jpg);
+    background-size: cover;
+    animation: mianimacion 10s linear 5s infinite;
+    -webkit-animation: mianimacion 10s linear 5s infinite;
+    -moz-animation: mi animacion 10s linear 5s infinite;
+}
+#fondo4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background.jpg);
+    animation: mianimacion 10s linear 5s infinite;
+    -webkit-animation: mianimacion 10s linear 5s infinite;
+    -moz-animation: mi animacion 10s linear 5s infinite;
+}
+@keyframes mianimacion{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@-webkit-keyframes mianimacion{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes mianimacion{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*Se establece el estilo de la lista que tendra, en este caso, se quita el por defecto*/
+    text-decoration: none;/*Usada para decorar con lineas el texto, por defecto, algunos de los textos como enlaces vienen con lineas como es el caso, por ello se usa la propiedad none*/
+    font-family: sans-serif;/*Tipo de letra que se usara en el diseño de el archivo html*/
+}
+
+nav#botoneraMovil{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    background:white;
+    top: 50px;
+    left: -100%;/*Cantidad o porcentaje en el que se movera hacia la derecha un elemento, en este caso se disminuira el espacio hacia la izquierda*/
+    transition: left .5s;
+}
+nav#botoneraMovil ul li{
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    background: #ccc;
+}
+nav#botoneraMovil ul li:hover{
+    width:100%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #aaa;
+}
+label#labelMovil span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../img/boton1.jpg) no-repeat;
+    margin: 5px;
+    cursor: pointer;
+}
+input#botonMovil{
+    display: none;
+}
+label#labelMovil h2{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+label#labelMovil span:hover{
+    background: url(../img/boton2.jpg) no-repeat;
+}
+input#botonMovil:checked + label#labelMovil span{
+    background: url(../img/boton3.jpg) no-repeat;
+}
+
+input#botonMovil:checked ∼ nav#botoneraMovil{
+    left: 0px;
+}
