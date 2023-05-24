@@ -38,7 +38,7 @@
     -webkit-animation: mianimacion 10s linear 5s infinite;
     -moz-animation: mi animacion 10s linear 5s infinite;
 }
-@keyframes mianimacion{
+@keyframes mianimacion{ 
     0%{
         opacity: 1;
     }

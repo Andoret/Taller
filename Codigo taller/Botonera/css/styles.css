@@ -18,8 +18,8 @@ nav#botoneraMovil{
 nav#botoneraMovil ul li{
     width: 100%;
     line-height: 40px;
-    text-align: center;
-    border: 1px solid white;
+    text-align: center; /*funcionalidad que permite alinear el texto del elemento en el que se esta incluyendo*/
+    border: 1px solid white; /*esta herramienta permite poner un borde al elemento en el que se esta incluyendo, donde puede ser de diferentes colores y continuidad*/
     background: #ccc;
 }
 nav#botoneraMovil ul li:hover{
@@ -52,6 +52,6 @@ input#botonMovil:checked + label#labelMovil span{
     background: url(../img/boton3.jpg) no-repeat;
 }
 
-input#botonMovil:checked ∼ nav#botoneraMovil{
+input#botonMovil:checked ~ nav#botoneraMovil{ /* el simbolo "~" es un selector general de hermanos, esto permite selecionar varios elementos que son hermanos del elemento anterior*/
     left: 0px;
 }
